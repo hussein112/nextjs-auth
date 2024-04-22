@@ -20,7 +20,7 @@ const page = () => {
                 }
             };
 
-            axios.get(`http://localhost:3000/user/${userId}`, config)
+            axios.get(`https://express-auth-9qaq.onrender.com/user/${userId}`, config)
                 .then(response => {
                     setUser(response.data);
                 })

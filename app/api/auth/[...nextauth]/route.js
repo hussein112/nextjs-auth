@@ -13,7 +13,7 @@ export const authOptions = {
       },
       async authorize(credentials) {
         try{
-          const res = await axios.post('http://localhost:3000/login', credentials, {
+          const res = await axios.post('https://express-auth-9qaq.onrender.com/login', credentials, {
             headers: {
                 'Content-Type': 'application/json'
             }
